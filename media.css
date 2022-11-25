@@ -1,0 +1,23 @@
+@media (min-width: 700px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: 90px;
+  }
+
+  nav li a {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .man-png {
+    width: 300px;
+  }
+}
