@@ -6,7 +6,7 @@
 
 @media (max-width: 700px) {
   nav {
-    height: 90px;
+    height: 60px;
   }
 
   nav li a {
@@ -16,8 +16,18 @@
   .burger-menu {
     display: block;
   }
-
-  .man-png {
-    width: 300px;
+  .menuButton h1 {
+    font-size: 50px;
   }
+  
+  .home-title_left h2 {
+    font-size: 30px;
+    padding: 90px 40px 90px 40px;
+  }
+  .about-text p {
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 90px;
+  }
+
 }
