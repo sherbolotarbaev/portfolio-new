@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 8px
 }
@@ -24,12 +29,7 @@
 
 /* Body start */
 body {
-  background-image: url(./BG-3.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 1900px;
+  background-color: rgb(27, 27, 27);
 }
 
 /* NAVBAR */
@@ -87,7 +87,7 @@ nav li a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   padding: 190px 40px 0 60px;
-  background: linear-gradient(2deg, #a200ff, #ffffff);
+  background: linear-gradient(9deg, #a200ff, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
 }
@@ -162,4 +162,37 @@ nav li a:hover {
 .menu ul li a:hover {
   color: #00d0ff;
   text-shadow: 0 0 30px #00d0ff;
+}
+
+/* ABOUT ME*/
+.about-page {
+  background: linear-gradient(40deg, #8800ff, #fff);
+  box-shadow: 0 0 90px #8800ff;
+}
+
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-text h1 {
+  font-size: 40px;
+  color: #161616;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #161616;
+  ;
+}
+
+.about-text p {
+  font-size: 29px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  color: #161616;
+  padding: 50px;
+  width: 80%;
 }
