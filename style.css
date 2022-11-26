@@ -205,7 +205,7 @@ nav li a:hover {
 }
 
 .card-reverse img {
-  padding: 30px;
+  padding: 20px;
   animation-direction: alternate-reverse;
   animation-name: SHER;
   animation-iteration-count: infinite;
@@ -213,7 +213,7 @@ nav li a:hover {
 }
 
 .card-about img {
-  padding: 30px;
+  padding: 20px;
   animation-direction: alternate;
   animation-name: SHER;
   animation-iteration-count: infinite;
@@ -226,15 +226,15 @@ nav li a:hover {
   }
 
   25% {
-    transform: translateY(-7%);
+    transform: translateY(-8%);
   }
 
   50% {
-    transform: translateY(-5%);
+    transform: translateY(-6%);
   }
 
   75% {
-    transform: translateY(-3%);
+    transform: translateY(-4%);
   }
 
   100% {
