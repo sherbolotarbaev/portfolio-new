@@ -38,7 +38,7 @@ nav {
   left: 0;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.262);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);
@@ -167,7 +167,7 @@ nav li a:hover {
 
 /* ABOUT ME*/
 .about-page {
-  background: linear-gradient(40deg, #8800ff, #fff);
+  background: linear-gradient(10deg, #6a00c7, #fff);
   box-shadow: 0 0 200px #8800ff;
   min-height: 100vh;
 }
@@ -199,21 +199,24 @@ nav li a:hover {
 
 /* ABOUT CARD */
 .about-card {
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.card-reverse img {
+/* .card-reverse img {
   padding: 20px;
+  border-radius: 10px;
   animation-direction: alternate-reverse;
   animation-name: SHER;
   animation-iteration-count: infinite;
   animation-duration: 1s;
-}
+} */
 
 .card-about img {
   padding: 20px;
+  border-radius: 30px;
   animation-direction: alternate;
   animation-name: SHER;
   animation-iteration-count: infinite;
