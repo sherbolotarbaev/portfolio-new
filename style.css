@@ -5,7 +5,6 @@
 }
 
 html {
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -56,7 +55,7 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  padding: 28px;
+  padding: 18px;
 }
 
 nav li a {
@@ -64,7 +63,8 @@ nav li a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
+  padding-left: 30px;
   transition: .5s;
   border-radius: 20px;
 }
@@ -74,19 +74,27 @@ nav li a:hover {
   text-shadow: 0 0 30px #00d0ff;
 }
 
+/* HOME PAGE */
+.home-page {
+  background-color: rgb(23, 9, 26);
+  min-height: 100vh;
+}
+
 /* HOME-TITLE */
 .home-title {
   min-width: 300px;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
 }
 
 .home-title_left h2 {
   color: white;
-  font-family: sans-serif;
   font-size: 59px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  padding: 190px 40px 190px 60px;
   background: linear-gradient(9deg, #a200ff, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
@@ -160,13 +168,12 @@ nav li a:hover {
 /* ABOUT ME*/
 .about-page {
   background: linear-gradient(40deg, #8800ff, #fff);
-  box-shadow: 0 0 90px #8800ff;
-  width: 100%;
+  box-shadow: 0 0 200px #8800ff;
+  min-height: 100vh;
 }
 
 .about-text {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -179,7 +186,6 @@ nav li a:hover {
   padding-top: 50px;
   padding-bottom: 15px;
   border-bottom: 4px solid #161616;
-  ;
 }
 
 .about-text p {
@@ -188,7 +194,52 @@ nav li a:hover {
   font-weight: 600;
   color: #161616;
   padding: 50px;
-  width: 80%;
+  width: 96%;
+}
+
+/* ABOUT CARD */
+.about-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-reverse img {
+  padding: 30px;
+  animation-direction: alternate-reverse;
+  animation-name: SHER;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.card-about img {
+  padding: 30px;
+  animation-direction: alternate;
+  animation-name: SHER;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes SHER {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  25% {
+    transform: translateY(-7%);
+  }
+
+  50% {
+    transform: translateY(-5%);
+  }
+
+  75% {
+    transform: translateY(-3%);
+  }
+
+  100% {
+    transform: translateY(-0);
+  }
 }
 
 /* FOOTER */
