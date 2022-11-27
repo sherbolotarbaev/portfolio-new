@@ -2,6 +2,10 @@
   .burger-menu {
     display: none;
   }
+
+  .skill-card {
+    margin: 70px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -34,5 +38,10 @@
 
   .social-media {
     font-size: 30px;
+  }
+
+  .cards-skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
