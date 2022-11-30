@@ -141,7 +141,7 @@ nav li a:hover {
 
 .menu {
   left: 0;
-  bottom: 100%;
+  bottom: 130%;
   position: fixed;
   height: 220px;
   width: 100%;
@@ -156,7 +156,7 @@ nav li a:hover {
 .menu li {
   list-style-type: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 35px;
 }
 
 .menu a {
@@ -164,7 +164,7 @@ nav li a:hover {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.4s;
 }
 
