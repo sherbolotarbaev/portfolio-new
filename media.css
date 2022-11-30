@@ -6,6 +6,17 @@
   .skill-card {
     margin: 70px;
   }
+
+  .home-title_left h2 {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 700px) {
+  .cosmos-video {
+    min-height: 100vh;
+    width: 100%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -43,5 +54,10 @@
   .cards-skills {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .cosmos-video {
+    min-height: 100vh;
+    width: 400%;
   }
 }
