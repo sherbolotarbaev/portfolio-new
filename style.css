@@ -282,10 +282,15 @@ nav li a:hover {
   margin: 20px;
   background: rgba(255, 255, 255, 0.07);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
   border: 1px solid rgba(255, 255, 255, 0.57);
+  transition: .5s;
+}
+
+.skill-card:hover {
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.48);
 }
 
 .icon-box img {
@@ -530,7 +535,7 @@ footer {
   color: white;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  width: 50%;
+  width: 100%;
   padding: 30px;
 }
 
@@ -567,4 +572,86 @@ footer {
 
 .logo-skills:hover {
   --_s: 0px
+}
+
+/* animation paragraph */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+p {
+  margin: 0;
+}
+
+:root {
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+.box {
+  font-size: 3vw;
+  margin: max(1rem, 3vw);
+  border: 0.35rem solid;
+  padding: 1vw;
+  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+  animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+  animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+@keyframes borderRadial {
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
 }
