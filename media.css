@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 300px) and (max-width: 900px) {
   .burger-menu {
     display: none;
   }
@@ -10,12 +10,20 @@
   .home-title_left h2 {
     padding: 50px;
   }
+
+  .logo-skills {
+    width: 40%;
+  }
 }
 
 @media (min-width: 700px) {
   .cosmos-video {
     min-height: 100vh;
     width: 100%;
+  }
+
+  .burger-menu {
+    display: none;
   }
 }
 
@@ -59,5 +67,14 @@
   .cosmos-video {
     min-height: 100vh;
     width: 400%;
+  }
+
+  .comment-logo p {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .logo-skills {
+    width: 60%;
   }
 }
