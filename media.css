@@ -1,10 +1,10 @@
-@media (min-width: 300px) and (max-width: 900px) {
+@media (min-width: 300px) and (max-width: 1000px) {
   .burger-menu {
     display: none;
   }
 
   .skill-card {
-    margin: 70px;
+    margin: 30px;
   }
 
   .home-title_left h2 {
