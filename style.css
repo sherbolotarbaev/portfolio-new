@@ -47,24 +47,23 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin-right: 50px;
+  padding: 20px;
   min-width: 300px;
 }
 
 nav li {
   list-style-type: none;
-  padding: 18px;
 }
 
 nav li a {
   color: white;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 17px;
-  padding-left: 30px;
+  padding: 20px;
   transition: .5s;
   border-radius: 20px;
 }
@@ -175,7 +174,10 @@ nav li a:hover {
 
 /* ABOUT ME*/
 .about-page {
-  background-color: rgb(29, 29, 29);
+  background-image: url(https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg?w=1800&t=st=1669952774~exp=1669953374~hmac=5cf2367b70bdf3c84a55aa4a324335b70087637245f844daa75bf154b4a338f9);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   box-shadow: 0 0 200px #8800ff;
   min-height: 100vh;
 }
@@ -188,19 +190,19 @@ nav li a:hover {
 
 .about-text h1 {
   font-size: 40px;
-  color: white;
+  color: rgb(54, 38, 60);
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   padding-top: 90px;
   padding-bottom: 15px;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid rgb(23, 15, 23);
 }
 
 .about-text p {
   font-size: 29px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 600;
-  color: white;
+  color: rgb(20, 52, 106);
   padding: 50px;
   width: 96%;
 }
@@ -255,7 +257,7 @@ nav li a:hover {
 
 /* SKILLS PAGE */
 .skills-page {
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 .skill-title h1 {
@@ -473,55 +475,6 @@ nav li a:hover {
   color: rgba(45, 212, 191, 1);
 }
 
-/* FOOTER */
-footer {
-  background-color: #151515;
-  width: 100%;
-  height: 100%;
-}
-
-.footer-content {
-  padding: 40px 0 40px 0;
-}
-
-.footer-title {
-  text-align: center;
-  padding-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.footer-title h2 {
-  font-size: 25px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 20px;
-  color: rgb(0, 195, 255);
-}
-
-.footer-title p {
-  font-size: 18px;
-  color: rgba(0, 204, 255, 0.623);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.social-media {
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-media a {
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  transition: .5s;
-}
-
-.social-media a:hover {
-  background: linear-gradient(9deg, #a200ff, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
-}
-
 /* Comment logo */
 .comment-logo {
   display: flex;
@@ -654,4 +607,53 @@ p {
     --gradX: 50%;
     --gradY: 0%;
   }
+}
+
+/* FOOTER */
+footer {
+  background-color: #151515;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  padding: 40px 0 40px 0;
+}
+
+.footer-title {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-title h2 {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 20px;
+  color: rgb(0, 195, 255);
+}
+
+.footer-title p {
+  font-size: 18px;
+  color: rgba(0, 204, 255, 0.623);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.social-media {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.social-media a:hover {
+  background: linear-gradient(9deg, #a200ff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }

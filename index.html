@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./media.css" />
 
-    <link rel="icon" type="image/x-icon" href="./WebIcon.png">
+    <link rel="icon" type="image/x-icon" href="./WebIcon.png" />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   </head>
   <body>
     <header>
@@ -21,12 +21,13 @@
         <!-- Navbar -->
         <div class="navbar">
           <nav>
+            <img class="logo" src="./WebIcon.png" alt="Logo" width="50px" />
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#about-page">ABOUT ME</a></li>
-              <li><a href="#">CONTACTS</a></li>
-              <li><a href="#skills-page">SKILLS</a></li>
-              <li><a href="#">DEVX</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about-page">About me</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#skills-page">Skills</a></li>
+              <li><a href="#">DevX</a></li>
             </ul>
           </nav>
           <!-- Burger - Menu -->
@@ -36,28 +37,33 @@
                 <h1>☰</h1>
                 <div class="menu">
                   <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about-page">ABOUT ME</a></li>
-                    <li><a href="#">CONTACTS</a></li>
-                    <li><a href="#skills-page">SKILLS</a></li>
-                    <li><a href="#">DEVX</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-page">About me</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#skills-page">Skills</a></li>
+                    <li><a href="#">DevX</a></li>
                   </ul>
                 </div>
               </div>
-           </div>
-         </div>
-        <!-- Navbar end -->
-         <!-- Home - Title -->
-         <div class="home-title">
-          <div class="home-title_left">
-            <h2>I'm Sherbolot. I'm a future <br> Full-Stack Devoloper and designer. <br> Student at DevX-KG.</h2>
+            </div>
           </div>
+          <!-- Navbar end -->
+          <!-- Home - Title -->
+          <div class="home-title">
+            <div class="home-title_left">
+              <h2>
+                I'm Sherbolot. I'm a future <br />
+                Full-Stack Devoloper and designer. <br />
+                Student at DevX-KG.
+              </h2>
+            </div>
+          </div>
+          <video autoplay loop muted plays-inline class="cosmos-video">
+            <source src="./cosmos.mp4" type="video/mp4" />
+          </video>
         </div>
-        <video autoplay loop muted plays-inline class="cosmos-video">
-          <source src="./cosmos.mp4" type="video/mp4">
-        </video>
-     </div>
-   </header>
+      </div>
+    </header>
     <!-- Section About -->
     <main>
       <section class="container">
@@ -65,9 +71,12 @@
           <div class="about-text">
             <h1>About Me</h1>
             <p>
-              My name is Arbaev Sherbolot, i'm 16 years old (30.09.2006), i live in Karakol (Issyk-Kul, Kyrgyzstan),
-              I realy like Programming and Design, also i can play piano and i have 7 years musical
-              education. 2020 I finished ninth grade, then I entered the college of the Issyk-Kul State University,  Now i study at DevX-KG.</p>
+              My name is Arbaev Sherbolot, i'm 16 years old (30.09.2006), i live
+              in Karakol (Issyk-Kul, Kyrgyzstan), I realy like Programming and
+              Design, also i can play piano and i have 7 years musical
+              education. 2020 I finished ninth grade, then I entered the college
+              of the Issyk-Kul State University, Now i study at DevX-KG.
+            </p>
           </div>
           <div class="about-card">
             <div class="card-about">
@@ -91,7 +100,8 @@
           <div class="cards-skills">
             <!-- 1 -->
             <div class="skill-card">
-              <div class="icon-box"><img src="./Card-1.png" alt="B1" />
+              <div class="icon-box">
+                <img src="./Card-1.png" alt="B1" />
                 <div class="percent">
                   <svg>
                     <circle cx="70" cy="70" r="70"></circle>
@@ -105,7 +115,8 @@
             </div>
             <!-- 2 -->
             <div class="skill-card">
-              <div class="icon-box"><img src="./Card-2.png" alt="B1" />
+              <div class="icon-box">
+                <img src="./Card-2.png" alt="B1" />
                 <div class="percent-2">
                   <svg>
                     <circle cx="70" cy="70" r="70"></circle>
@@ -119,7 +130,8 @@
             </div>
             <!-- 3 -->
             <div class="skill-card">
-              <div class="icon-box"><img src="./Card-3.png" alt="B1" />
+              <div class="icon-box">
+                <img src="./Card-3.png" alt="B1" />
                 <div class="percent-3">
                   <svg>
                     <circle cx="70" cy="70" r="70"></circle>
@@ -131,15 +143,45 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
-
+        <!-- Comment logo -->
         <div class="comment-logo">
-          <img class="logo-skills" src="https://picsum.photos/id/1069/200/200" >
-          <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic voluptatum iusto consequatur deleniti delectus culpa est, possimus maiores voluptatem explicabo dolor odio quam natus necessitatibus ratione cupiditate nulla deserunt.</p></div>
-          <img class="logo-skills" src="https://picsum.photos/id/1074/200/200" style="--color:#c300ff">
-          <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic voluptatum iusto consequatur deleniti delectus culpa est, possimus maiores voluptatem explicabo dolor odio quam natus necessitatibus ratione cupiditate nulla deserunt.</p></div>
-          <img class="logo-skills" src="https://picsum.photos/id/1012/200/200" style="--color:#c300ff">
-          <div class="box"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt hic voluptatum iusto consequatur deleniti delectus culpa est, possimus maiores voluptatem explicabo dolor odio quam natus necessitatibus ratione cupiditate nulla deserunt.</p></div>
+          <img
+            class="logo-skills"
+            src="https://picsum.photos/id/1069/200/200" />
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              hic voluptatum iusto consequatur deleniti delectus culpa est,
+              possimus maiores voluptatem explicabo dolor odio quam natus
+              necessitatibus ratione cupiditate nulla deserunt.
+            </p>
+          </div>
+          <img
+            class="logo-skills"
+            src="https://picsum.photos/id/1074/200/200"
+            style="--color: #c300ff" />
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              hic voluptatum iusto consequatur deleniti delectus culpa est,
+              possimus maiores voluptatem explicabo dolor odio quam natus
+              necessitatibus ratione cupiditate nulla deserunt.
+            </p>
+          </div>
+          <img
+            class="logo-skills"
+            src="https://picsum.photos/id/1012/200/200"
+            style="--color: #c300ff" />
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              hic voluptatum iusto consequatur deleniti delectus culpa est,
+              possimus maiores voluptatem explicabo dolor odio quam natus
+              necessitatibus ratione cupiditate nulla deserunt.
+            </p>
+          </div>
         </div>
       </section>
     </main>
