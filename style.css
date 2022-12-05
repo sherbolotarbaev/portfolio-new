@@ -37,12 +37,17 @@ nav {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.262);
+  z-index: 400;
+  background: rgba(0, 0, 0, 0.639);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.71);
+  border-bottom: 3px solid rgb(0, 166, 255);
+  transition: all .5s;
+}
+
+nav:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.576);
 }
 
 nav ul {
@@ -50,7 +55,6 @@ nav ul {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  min-width: 300px;
 }
 
 nav li {
@@ -70,12 +74,18 @@ nav li a {
 
 nav li a:hover {
   color: #00d0ff;
-  text-shadow: 0 0 30px #00d0ff;
+  text-shadow: 0 0 40px #00d0ff;
 }
 
 /* HOME PAGE */
 .home-page {
   min-height: 100vh;
+  /*  
+  background-image: url(./BG-COS.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   */
 }
 
 .cosmos-video {
@@ -90,6 +100,7 @@ nav li a:hover {
 
 /* HOME-TITLE */
 .home-title {
+  position: absolute;
   min-width: 300px;
   width: 100%;
   display: flex;
@@ -113,7 +124,7 @@ nav li a:hover {
   position: fixed;
   top: 0;
   right: 30px;
-  z-index: 1000;
+  z-index: 400;
 }
 
 .menuButton h1 {
@@ -215,14 +226,14 @@ nav li a:hover {
   flex-wrap: wrap;
 }
 
-/* .card-reverse img {
+.card-about-reverse img {
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   animation-direction: alternate-reverse;
   animation-name: SHER;
   animation-iteration-count: infinite;
   animation-duration: 1s;
-} */
+}
 
 .card-about img {
   padding: 20px;
@@ -257,7 +268,14 @@ nav li a:hover {
 
 /* SKILLS PAGE */
 .skills-page {
-  min-height: 200vh;
+  min-height: 100vh;
+  /* 
+  background-image: url(./BG-COS.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   */
+
 }
 
 .skill-title h1 {
@@ -292,7 +310,9 @@ nav li a:hover {
 }
 
 .skill-card:hover {
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.48);
+  transform: scale(1.10);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.587);
+  z-index: 200;
 }
 
 .icon-box img {
@@ -558,7 +578,7 @@ p {
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
-  --c1: rgba(168, 239, 255, 1);
+  --c1: rgb(98, 255, 0);
   --c2: rgba(168, 239, 255, 0.1);
 }
 
