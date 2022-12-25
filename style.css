@@ -353,7 +353,7 @@ nav li a:hover {
 }
 
 .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 0) / 100);
+  stroke-dashoffset: calc(440 - (440 * 15) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
@@ -627,6 +627,53 @@ p {
     --gradX: 50%;
     --gradY: 0%;
   }
+}
+
+/* YOUTUBE */
+.Youtube-page {
+  min-height: 100vh;
+  background-color: #0084ff;
+}
+
+.video-youtube {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.video-youtube iframe {
+  width: 540px;
+  height: 305px;
+  margin: 30px;
+}
+
+.title-youtube {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  padding-top: 90px;
+}
+
+.account-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.account-youtube h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.logo-youtube img {
+  border-radius: 50%;
+  width: 100px;
 }
 
 /* FOOTER */
