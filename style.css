@@ -631,8 +631,11 @@ p {
 
 /* YOUTUBE */
 .Youtube-page {
-  min-height: 100vh;
-  background-color: #0084ff;
+  min-height: 900px;
+  background-image: url(https://wallpaperaccess.com/full/1382359.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .video-youtube {
@@ -663,17 +666,33 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .account-youtube h1 {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  padding: 20px;
+  padding: 30px;
 }
 
 .logo-youtube img {
   border-radius: 50%;
   width: 100px;
+}
+
+.subscribe a {
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 17px;
+  border-radius: 40px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(229, 8, 8);
+  transition: .4s;
+}
+
+.subscribe a:hover {
+  background-color: rgb(27, 27, 27);
 }
 
 /* FOOTER */
