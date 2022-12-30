@@ -28,7 +28,7 @@ html {
 
 /* Body start */
 body {
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(23, 23, 23);
 }
 
 /* NAVBAR */
@@ -42,7 +42,7 @@ nav {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.9px);
   -webkit-backdrop-filter: blur(6.9px);
-  border-bottom: 3px solid rgb(0, 166, 255);
+  border-bottom: 3px solid rgb(0, 153, 255);
   transition: all .5s;
 }
 
@@ -122,9 +122,9 @@ nav li a:hover {
   font-size: 59px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  background: linear-gradient(9deg, #a200ff, #fff);
+  background: linear-gradient(9deg, #9000ff, rgb(0, 229, 255));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: transparent;
 }
 
 /* BURGER MENU */
@@ -194,11 +194,8 @@ nav li a:hover {
 
 /* ABOUT ME*/
 .about-page {
-  background-image: url(https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg?w=1800&t=st=1669952774~exp=1669953374~hmac=5cf2367b70bdf3c84a55aa4a324335b70087637245f844daa75bf154b4a338f9);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   box-shadow: 0 0 200px #8800ff;
+  margin: 0 auto;
   min-height: 100vh;
 }
 
@@ -210,7 +207,7 @@ nav li a:hover {
 
 .about-text h1 {
   font-size: 40px;
-  color: rgb(11, 4, 13);
+  color: rgb(239, 239, 239);
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   padding-top: 90px;
@@ -219,17 +216,16 @@ nav li a:hover {
 }
 
 .about-text p {
-  font-size: 29px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 600;
-  color: rgb(20, 52, 106);
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(239, 239, 239);
   padding: 50px;
-  width: 96%;
+  width: 90%;
 }
 
 /* ABOUT CARD */
 .about-card {
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -320,7 +316,7 @@ nav li a:hover {
 
 .skill-card:hover {
   transform: scale(1.10);
-  box-shadow: 0 0 50px rgba(255, 255, 255, 0.587);
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.545);
   z-index: 200;
 }
 
@@ -504,147 +500,9 @@ nav li a:hover {
   color: rgba(45, 212, 191, 1);
 }
 
-/* Comment logo */
-.comment-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-}
-
-.comment-logo p {
-  color: white;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  padding: 30px;
-}
-
-.logo-skills {
-  --color: #c300ff;
-  /* the color of the border */
-  --border: 10px;
-  /* the thickness of the border */
-  --offset: 30px;
-  /* control the movement of the border */
-  --gap: 5px;
-  /* the gap on hover */
-
-  border-radius: 50%;
-  width: 20%;
-  cursor: pointer;
-  padding: calc(var(--border) + var(--gap));
-  border: var(--offset) solid #0000;
-  --_m: radial-gradient(50% 50%, #000 calc(100% - var(--offset)), #0000 calc(100% - var(--border)));
-  -webkit-mask: var(--_m);
-  mask: var(--_m);
-  --_g: #0000 calc(99% - var(--border)), var(--color) calc(100% - var(--border)) 99%, #0000;
-  --_s: var(--offset);
-  --_r: 100% 100% at;
-  background:
-    radial-gradient(var(--_r) 0 0, var(--_g)) calc(100% + var(--_s)) calc(100% + var(--_s)),
-    radial-gradient(var(--_r) 100% 0, var(--_g)) calc(0% - var(--_s)) calc(100% + var(--_s)),
-    radial-gradient(var(--_r) 0 100%, var(--_g)) calc(100% + var(--_s)) calc(0% - var(--_s)),
-    radial-gradient(var(--_r) 100% 100%, var(--_g)) calc(0% - var(--_s)) calc(0% - var(--_s));
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  transition: .6s;
-}
-
-.logo-skills:hover {
-  --_s: 0px
-}
-
-/* animation paragraph */
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:400");
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 90deg;
-  inherits: true;
-}
-
-@property --gradX {
-  syntax: '<percentage>';
-  initial-value: 50%;
-  inherits: true;
-}
-
-@property --gradY {
-  syntax: '<percentage>';
-  initial-value: 0%;
-  inherits: true;
-}
-
-p {
-  margin: 0;
-}
-
-:root {
-  --d: 2500ms;
-  --angle: 90deg;
-  --gradX: 100%;
-  --gradY: 50%;
-  --c1: rgb(98, 255, 0);
-  --c2: rgba(168, 239, 255, 0.1);
-}
-
-.box {
-  font-size: 3vw;
-  margin: max(1rem, 3vw);
-  border: 0.35rem solid;
-  padding: 1vw;
-  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-  animation: borderRotate var(--d) linear infinite forwards;
-}
-
-.box:nth-child(2) {
-  border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
-  animation: borderRadial var(--d) linear infinite forwards;
-}
-
-@keyframes borderRotate {
-  100% {
-    --angle: 420deg;
-  }
-}
-
-@keyframes borderRadial {
-  20% {
-    --gradX: 100%;
-    --gradY: 50%;
-  }
-
-  40% {
-    --gradX: 100%;
-    --gradY: 100%;
-  }
-
-  60% {
-    --gradX: 50%;
-    --gradY: 100%;
-  }
-
-  80% {
-    --gradX: 0%;
-    --gradY: 50%;
-  }
-
-  100% {
-    --gradX: 50%;
-    --gradY: 0%;
-  }
-}
-
 /* YOUTUBE */
 .Youtube-page {
-  min-height: 900px;
-  background-image: url(https://wallpaperaccess.com/full/1382359.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  min-height: 120vh;
 }
 
 .video-youtube {
@@ -662,11 +520,11 @@ p {
 }
 
 .title-youtube {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   padding-top: 90px;
 }
 
@@ -692,7 +550,7 @@ p {
 .subscribe a {
   font-size: 20px;
   font-family: sans-serif;
-  padding: 17px;
+  padding: 16px;
   border-radius: 40px;
   color: white;
   text-decoration: none;
@@ -701,7 +559,7 @@ p {
 }
 
 .subscribe a:hover {
-  background-color: rgb(27, 27, 27);
+  background: linear-gradient(9deg, #9000ff, #2b2b2b);
 }
 
 /* FOOTER */
@@ -712,7 +570,7 @@ footer {
 }
 
 .footer-content {
-  padding: 40px 0 40px 0;
+  padding: 30px 0 30px 0;
 }
 
 .footer-title {
@@ -722,15 +580,19 @@ footer {
 }
 
 .footer-title h2 {
-  font-size: 25px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
   padding-bottom: 20px;
-  color: rgb(0, 195, 255);
+  color: rgb(0, 174, 255);
+  background: linear-gradient(9deg, #9000ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer-title p {
   font-size: 18px;
-  color: rgba(0, 204, 255, 0.623);
+  background: linear-gradient(9deg, #9000ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -750,5 +612,5 @@ footer {
 .social-media a:hover {
   background: linear-gradient(9deg, #a200ff, #fff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: transparent;
 }
