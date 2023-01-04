@@ -25,11 +25,9 @@
 
   .navbar {
     height: 0;
-    background: rgba(0, 179, 255, 0.153);
-    backdrop-filter: blur(6.1px);
-    -webkit-backdrop-filter: blur(6.1px);
+    background-color: rgba(16, 16, 16, 0.791);
     position: absolute;
-    top: 70px;
+    top: 75px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -38,7 +36,6 @@
 
   .navbar.active {
     height: 450px;
-    border-bottom: 2px solid white;
   }
 
   .navbar ul {
