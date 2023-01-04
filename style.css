@@ -343,7 +343,7 @@ header {
 }
 
 .percent-2 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 87) / 100);
+  stroke-dashoffset: calc(440 - (440 * 84) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
@@ -401,7 +401,7 @@ header {
 }
 
 .percent-3 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 90) / 100);
+  stroke-dashoffset: calc(440 - (440 * 88) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
