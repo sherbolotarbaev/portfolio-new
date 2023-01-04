@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -32,80 +34,70 @@ body {
 }
 
 /* NAVBAR */
-nav {
-  width: 100%;
+header {
   position: fixed;
-  left: 0;
   top: 0;
-  z-index: 400;
-  background: rgba(0, 0, 0, 0.639);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.9px);
-  -webkit-backdrop-filter: blur(6.9px);
-  border-bottom: 3px solid rgb(0, 153, 255);
-  transition: all .5s;
-}
-
-nav:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.576);
-}
-
-nav ul {
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 75px;
+  padding: 0 100px;
+  background-color: rgb(23, 23, 23);
+  border-bottom: 2px solid #0084ff;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.265);
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
 }
 
-nav li {
-  list-style-type: none;
+.logo-navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
-nav li a {
-  color: white;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+.hamburger {
+  display: none;
+}
+
+#home-link {
+  font-weight: 900;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  display: block;
   font-size: 17px;
-  padding: 20px;
-  transition: .5s;
-  border-radius: 20px;
+  font-family: sans-serif;
+  font-weight: 200;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: #fff;
+  transition: .2s;
+  margin: 0 5px;
 }
 
-nav li a:hover {
-  color: #00d0ff;
-  text-shadow: 0 0 40px #00d0ff;
+.navbar ul li a:hover {
+  color: #151515;
+  background-color: #ffffff;
 }
 
-#sign-in {
-  color: white;
-}
-
-#sign-in:hover {
-  color: #ffe100;
-  text-shadow: 0 0 40px #ffe100;
+.navbar ul li a.active {
+  color: #151515;
+  background-color: #ffffff;
 }
 
 /* HOME PAGE */
 .home-page {
   min-height: 100vh;
-  /*  
-  background-image: url(./BG-COS.jpeg);
-  background-position: center;
+  background-image: url(./cosbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-   */
 }
 
-.cosmos-video {
-  min-height: 100vh;
-  position: absolute;
-  width: 100%;
-  opacity: 0.3;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
 
 /* HOME-TITLE */
 .home-title {
@@ -122,74 +114,9 @@ nav li a:hover {
   font-size: 59px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  background: linear-gradient(9deg, #9000ff, rgb(0, 229, 255));
+  background: linear-gradient(9deg, #9000ff, rgb(255, 255, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-/* BURGER MENU */
-
-.burger-menu {
-  position: fixed;
-  top: 0;
-  right: 30px;
-  z-index: 400;
-}
-
-.menuButton h1 {
-  font-size: 65px;
-  padding-bottom: 10px;
-  color: white;
-  text-shadow: 0 0 30px rgb(0, 255, 242);
-}
-
-.menuButton:hover .menu {
-  width: 100%;
-  bottom: calc(100% - 200px);
-  box-shadow: 0 0 90px rgb(208, 0, 255);
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(6.9px);
-  -webkit-backdrop-filter: blur(3.4px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.71)
-}
-
-.navigationBar {
-  background-color:
-    rgba(255, 255, 255, 0);
-}
-
-.menu {
-  left: 0;
-  bottom: 130%;
-  position: fixed;
-  height: 220px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.592);
-  transition: 1s;
-}
-
-.menu ul {
-  padding: 30px;
-}
-
-.menu li {
-  list-style-type: none;
-  text-align: center;
-  line-height: 35px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  transition: 0.4s;
-}
-
-.menu ul li a:hover {
-  color: #00d0ff;
-  text-shadow: 0 0 30px #00d0ff;
 }
 
 /* ABOUT ME*/

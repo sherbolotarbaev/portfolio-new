@@ -17,54 +17,38 @@
   </head>
   <body>
     <header>
+      <!-- Navbar -->
+      <div class="logo-navbar"><img src="./YouTube-Logo.png" alt="logo-navbar" /></div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a id="home-link" href="#">Home</a></li>
+          <li><a href="#about-page">About Me</a></li>
+          <li><a href="#skills-page">Skills</a></li>
+          <li><a href="#youtube-page">Youtube</a></li>
+          <li><a href="./FORM/form.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Home - Page -->
       <div class="home-page">
-        <!-- Navbar -->
-        <div class="navbar">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about-page">About me</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#skills-page">Skills</a></li>
-              <li><a id="sign-in" href="./FORM/form.html">Sign in</a></li>
-            </ul>
-          </nav>
-          <!-- Burger - Menu -->
-          <div class="burger-menu">
-            <div class="navigationBar">
-              <div class="menuButton">
-                <h1>☰</h1>
-                <div class="menu">
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about-page">About me</a></li>
-                    <li><a href="#">Contacts</a></li>
-                    <li><a href="#skills-page">Skills</a></li>
-                    <li><a id="sign-in" href="./FORM/form.html">Sign in</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <!-- Home - Title -->
+        <div class="home-title">
+          <div class="home-title_left">
+            <h2>
+              I'm Sherbolot. I'm a future <br />
+              Full-Stack Devoloper and designer. <br />
+              Student at DevX-KG.
+            </h2>
           </div>
-          <!-- Navbar end -->
-          <!-- Home - Title -->
-          <div class="home-title">
-            <div class="home-title_left">
-              <h2>
-                I'm Sherbolot. I'm a future <br />
-                Full-Stack Devoloper and designer. <br />
-                Student at DevX-KG.
-              </h2>
-            </div>
-          </div>
-          <!-- <video autoplay loop muted plays-inline class="cosmos-video">
-            <source src="./cosmos.mp4" type="video/mp4" />
-          </video> -->
         </div>
       </div>
-    </header>
-    <!-- Section About -->
-    <main>
+      <!-- Section About -->
       <section class="container">
         <div id="about-page" class="about-page">
           <div class="about-text">
@@ -146,7 +130,7 @@
         </div>
       </section>
       <!-- Youtube -->
-      <section class="Youtube-page">
+      <section class="Youtube-page" id="youtube-page">
         <div class="title-youtube">
           <h2>My youtube channel</h2>
         </div>
@@ -216,5 +200,6 @@
         </div>
       </footer>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
