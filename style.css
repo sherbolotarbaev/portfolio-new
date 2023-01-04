@@ -285,7 +285,7 @@ header {
 }
 
 .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 15) / 100);
+  stroke-dashoffset: calc(440 - (440 * 28) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
@@ -343,7 +343,7 @@ header {
 }
 
 .percent-2 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 53) / 100);
+  stroke-dashoffset: calc(440 - (440 * 87) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
@@ -401,7 +401,7 @@ header {
 }
 
 .percent-3 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 63) / 100);
+  stroke-dashoffset: calc(440 - (440 * 93) / 100);
   stroke: rgba(45, 212, 191, 1);
 }
 
