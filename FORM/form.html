@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JavaScript</title>
-    <link rel="stylesheet" href="./form.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form with DevX Karakol</title>
+    <!-- Style CSS -->
+    <link href="./form.css" rel="stylesheet" />
   </head>
   <body>
-    <form id="main-form">
-      <div class="inputs">
-        <input type="text" name="name" placeholder="Name" id="name" />
-        <br /><br />
-        <input type="password" name="pass" placeholder="Password" id="pass" />
-        <br /><br />
-        <input
-          type="password"
-          name="repass"
-          placeholder="Password check"
-          id="repass" />
-        <br /><br />
-      </div>
-      <div class="gender">
-        <span>Gender: </span>
-        <br />
-        <input type="radio" name="state" id="male" value="Male" />
-        <label for="male">Male Gender</label>
-        <br />
-        <input type="radio" name="state" id="female" value="Female" />
-        <label for="female">Female Gender</label>
-        <br />
-      </div>
-      <div id="error"></div>
-      <input id="submit" type="submit" name="submit" value="Submit" />
-    </form>
-    <script src="./form.js"></script>
+    <div class="wrapper">
+      <main>
+        <div class="container">
+          <form id="form" action="/">
+            <div class="form-title">
+              <h2><span>Sign in</span></h2>
+            </div>
+            <div class="input-control">
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Username" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <input id="email" name="email" type="text" placeholder="Email" />
+              <div class="error"></div>
+            </div>
+            <button class="form-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-title">
+          <p>copyriht ©2023</p>
+          <h2>By: Sherbolot Arbaev</h2>
+        </div>
+      </footer>
+    </div>
+    <!-- Script JS -->
+    <script defer src="./form.js"></script>
   </body>
 </html>

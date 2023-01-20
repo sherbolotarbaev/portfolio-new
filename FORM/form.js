@@ -1,34 +1,54 @@
-document.getElementById("main-form").addEventListener("submit", checkForm);
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const email = document.getElementById("email");
 
-function checkForm(event) {
-  event.preventDefault();
-  let el = document.getElementById("main-form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-  let name = el.name.value;
-  console.log("Name: " + name);
-  let pass = el.pass.value;
-  console.log("Password: " + pass);
-  let repass = el.repass.value;
-  console.log("Password check: " + repass);
-  let state = el.state.value;
-  console.log("Password: " + state);
+  validateInputs();
+});
 
-  let fail = "";
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
 
-  if (name == "" || pass == "" || state == "") {
-    fail = "Fill in all the fields!";
-  } else if (name.length <= 1 || name.length > 50) {
-    fail = "Error name";
-  } else if (pass != repass) {
-    fail = "Passwords must be the same";
-  } else if (pass.split("&").length > 1) {
-    fail = "Incorrect password";
-  }
+  errorDisplay.innerText = message;
+  inputControl.classList.add("error");
+  inputControl.classList.remove("success");
+};
 
-  if (fail != "") {
-    document.getElementById("error").innerHTML = fail;
+const setSuccess = (element) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector(".error");
+
+  errorDisplay.innerText = "";
+  inputControl.classList.add("success");
+  inputControl.classList.remove("error");
+
+  window.location = "https://portfolio-devx.netlify.app/";
+};
+
+const isValidEmail = (email) => {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
+const validateInputs = () => {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+
+  if (usernameValue === "") {
+    setError(username, "Username is required");
   } else {
-    alert("Data sent");
-    window.location = "https://portfolio-devx.netlify.app/";
+    setSuccess(username);
   }
-}
+
+  if (emailValue === "") {
+    setError(email, "Email is required");
+  } else if (!isValidEmail(emailValue)) {
+    setError(email, "Provide a valid email address");
+  } else {
+    setSuccess(email);
+  }
+};
