@@ -30,7 +30,7 @@ html {
 
 /* Body start */
 body {
-  background-color: rgb(23, 23, 23);
+  background-color: rgb(13, 16, 25);
 }
 
 /* NAVBAR */
@@ -76,11 +76,23 @@ header {
   color: #fff;
   transition: .2s;
   margin: 0 5px;
+  position: relative;
 }
 
-.navbar ul li a:hover {
-  color: #151515;
+.navbar ul li a::before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: -48%;
+  width: 0;
+  height: 3px;
+  border-radius: 50px;
   background-color: #ffffff;
+  transition: width 0.3s;
+}
+
+.navbar ul li a:hover::before {
+  width: 52%;
 }
 
 .navbar ul li a.active {
@@ -91,9 +103,9 @@ header {
 /* HOME PAGE */
 .home-page {
   min-height: 100vh;
-  background-image: url(./cosbg.jpg);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.709), rgba(0, 0, 0, 0.625)), url(./Images/Man-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 
@@ -112,14 +124,14 @@ header {
   font-size: 59px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
-  background: linear-gradient(9deg, #9000ff, rgb(255, 255, 255));
+  background: linear-gradient(20deg, #ffffff, #6600ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* ABOUT ME*/
 .about-page {
-  box-shadow: 0 0 200px #8800ff;
+  box-shadow: 0 0 300px #6600ff;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -283,8 +295,8 @@ header {
 }
 
 .percent svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 28) / 100);
-  stroke: rgba(45, 212, 191, 1);
+  stroke-dashoffset: calc(440 - (440 * 34) / 100);
+  stroke: rgb(85, 0, 255);
 }
 
 .percent .number {
@@ -306,7 +318,7 @@ header {
 
 .percent-span {
   font-size: 40px;
-  color: rgba(45, 212, 191, 1);
+  color: rgb(255, 255, 255);
 }
 
 .percent-2 {
@@ -342,7 +354,7 @@ header {
 
 .percent-2 svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 84) / 100);
-  stroke: rgba(45, 212, 191, 1);
+  stroke: rgb(85, 0, 255);
 }
 
 .percent-2 .number {
@@ -364,7 +376,7 @@ header {
 
 .percent-2-span {
   font-size: 40px;
-  color: rgba(45, 212, 191, 1);
+  color: rgb(255, 255, 255);
 }
 
 .percent-3 {
@@ -400,7 +412,7 @@ header {
 
 .percent-3 svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 88) / 100);
-  stroke: rgba(45, 212, 191, 1);
+  stroke: rgb(85, 0, 255);
 }
 
 .percent-3 .number {
@@ -422,7 +434,65 @@ header {
 
 .percent-3-span {
   font-size: 40px;
-  color: rgba(45, 212, 191, 1);
+  color: rgb(255, 255, 255);
+}
+
+.percent-4 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.percent-4 svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.percent-4 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.percent-4 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+
+}
+
+.percent-4 svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 20) / 100);
+  stroke: rgb(85, 0, 255);
+}
+
+.percent-4 .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(231, 231, 231);
+}
+
+.percent-4 .number h2 {
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.percent-4-span {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
 }
 
 /* YOUTUBE */
@@ -479,17 +549,13 @@ header {
   border-radius: 40px;
   color: white;
   text-decoration: none;
-  background-color: rgb(229, 8, 8);
+  background-color: rgb(241, 10, 10);
   transition: .4s;
-}
-
-.subscribe a:hover {
-  background: linear-gradient(9deg, #9000ff, #2b2b2b);
 }
 
 /* FOOTER */
 footer {
-  background-color: #151515;
+  background-color: #eeeeee;
   width: 100%;
   height: 100%;
 }
@@ -505,20 +571,33 @@ footer {
 }
 
 .footer-title h2 {
-  font-size: 23px;
+  font-size: 20px;
+  font-weight: 300;
   padding-bottom: 20px;
-  color: rgb(0, 174, 255);
-  background: linear-gradient(9deg, #9000ff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(20, 20, 20);
 }
 
-.footer-title p {
+.footer-title a {
   font-size: 18px;
-  background: linear-gradient(9deg, #9000ff, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height: 1.8rem;
+  color: #6600ff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+}
+
+.footer-title a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #6600ff;
+  transition: width 0.4s;
+}
+
+.footer-title a:hover::before {
+  width: 100%;
 }
 
 .social-media {
@@ -530,12 +609,10 @@ footer {
 
 .social-media a {
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
   transition: .5s;
 }
 
 .social-media a:hover {
-  background: linear-gradient(9deg, #a200ff, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #6600ff;
 }
