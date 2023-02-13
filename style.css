@@ -102,21 +102,21 @@ header {
 /* HOME PAGE */
 .home-page {
   min-height: 100vh;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.709), rgba(0, 0, 0, 0.625)), url(./Images/Man-2.png);
+  background: linear-gradient(rgba(20, 6, 39, 0.817), rgba(0, 0, 0, 0.777)), url(./Images/Man-2.png);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-position: center;
+  background-size: cover;
 }
 
 
 /* HOME-TITLE */
 .home-title {
-  position: absolute;
   min-width: 300px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 230px;
+  padding-top: 233px;
 }
 
 .home-title_left h2 {
