@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       navbar.classList.remove("active");
       hamburger.classList.remove("open");
+      
     });
   });
 });

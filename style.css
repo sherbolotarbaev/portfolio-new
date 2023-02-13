@@ -160,49 +160,61 @@ header {
 
 /* ABOUT CARD */
 .about-card {
-  padding-top: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.card-about-reverse img {
-  padding: 20px;
-  border-radius: 30px;
-  animation-direction: alternate-reverse;
-  animation-name: SHER;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-}
-
+.card-about-reverse img,
 .card-about img {
-  padding: 20px;
+  margin: 20px;
   border-radius: 30px;
-  animation-direction: alternate;
-  animation-name: SHER;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
 }
 
-@keyframes SHER {
-  0% {
-    transform: translateY(-10%);
+@media (min-width: 1260px) {
+  .about-card {
+    padding-top: 65px;
+    padding-bottom: 50px;
   }
 
-  25% {
-    transform: translateY(-8%);
+  .card-about-reverse img {
+    border-radius: 30px;
+    animation-direction: alternate-reverse;
+    animation-name: SHER;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
   }
 
-  50% {
-    transform: translateY(-6%);
+  .card-about img {
+    border-radius: 30px;
+    animation-direction: alternate;
+    animation-name: SHER;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
   }
 
-  75% {
-    transform: translateY(-4%);
-  }
+  @keyframes SHER {
+    0% {
+      transform: translateY(-10%);
+    }
 
-  100% {
-    transform: translateY(-0);
+    25% {
+      transform: translateY(-8%);
+    }
+
+    50% {
+      transform: translateY(-6%);
+    }
+
+    75% {
+      transform: translateY(-4%);
+    }
+
+    100% {
+      transform: translateY(-0);
+    }
   }
 }
 
