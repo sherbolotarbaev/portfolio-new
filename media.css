@@ -194,9 +194,13 @@
   }
 
   .home-title_left h2 {
-    font-size: 4rem;
+    font-size: 3.7rem;
     line-height: 4rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .home-title_left p {
+    font-size: 1rem;
   }
 
   .home-buttons {

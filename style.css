@@ -94,7 +94,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(rgba(20, 6, 39, 0.848), rgba(0, 0, 0, 0.439)), url(./Images/man-bg.jpg);
+  background: linear-gradient(rgba(20, 6, 39, 0.761), rgb(13, 16, 25)), url(./Images/man-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -122,13 +122,14 @@ header {
 .home-title_left p {
   width: 100%;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   font-weight: 600;
-  color: #fff;
+  color: #fffffff0;
 }
 
 .home-title_left span {
-  color: #8decff;
+  color: #a4a9ff;
+  text-shadow: 0 0 3px #5900ff;
 }
 
 /* Home Buttons */
