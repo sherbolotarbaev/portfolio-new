@@ -94,15 +94,17 @@
 
   /* Navbar */
   .navbar {
+    background: rgba(8, 15, 31, 0.85);
+    box-shadow: 0 150px 100px rgba(102, 0, 255, 0.297);
+    border-radius: 0 0 30px 30px;
+    width: 100vw;
     height: 0;
     position: absolute;
-    top: 85px;
+    top: 75px;
     left: 0;
     right: 0;
     z-index: 1000;
-    width: 100vw;
-    background-color: rgba(14, 18, 45, 0.765);
-    transition: 0.2s;
+    transition: 0.5s;
     overflow: hidden;
   }
 
@@ -128,12 +130,11 @@
 
   .nav-links li a {
     padding: 10px 100px;
+    color: #ffffff;
     font-size: 20px;
   }
 
-  .nav-links li a:hover:after {
-    width: 0;
-  }
+  .nav-links li a:hover {}
 }
 
 @media (max-width: 850px) {
