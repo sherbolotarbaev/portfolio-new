@@ -136,15 +136,7 @@
   }
 }
 
-@media (max-width: 800px) {
-  .home-title {
-    padding-top: 130px;
-  }
-
-  .home-title_left h2 {
-    font-size: 39px;
-    padding: 90px 40px 90px 40px;
-  }
+@media (max-width: 850px) {
 
   .Youtube-page {
     min-height: 130vh;
@@ -173,7 +165,7 @@
   }
 
   .video-youtube iframe {
-    width: 100%;
+    width: 500px;
     height: 230px;
   }
 
@@ -191,13 +183,34 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 1000px) {
-  .skill-card {
-    margin: 30px;
+@media (max-width: 750px) {
+
+  .home-image img {
+    margin-bottom: 40px;
+  }
+
+  .home-title {
+    padding: 0 0 0 50px;
   }
 
   .home-title_left h2 {
-    padding: 50px;
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .home-title_left p {
+    width: 90%;
+  }
+
+  .youtube-btn {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+  .skill-card {
+    margin: 30px;
   }
 
   .logo-skills {
