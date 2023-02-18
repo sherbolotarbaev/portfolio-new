@@ -79,6 +79,7 @@ header {
   position: relative;
   color: #fff;
   font-size: 15px;
+  font-weight: 500;
   text-transform: uppercase;
   transition: 0.4s;
 }
@@ -94,7 +95,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(rgba(20, 6, 39, 0.761), rgb(13, 16, 25)), url(./Images/man-bg.jpg);
+  background: linear-gradient(rgba(20, 6, 39, 0.761), rgb(13, 16, 25)), url(./Images/man-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -512,7 +513,7 @@ header {
 }
 
 .percent-4 svg circle:nth-child(2) {
-  stroke-dashoffset: calc(440 - (440 * 20) / 100);
+  stroke-dashoffset: calc(440 - (440 * 26) / 100);
   stroke: rgb(85, 0, 255);
 }
 
